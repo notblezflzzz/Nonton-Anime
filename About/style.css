@@ -1,0 +1,157 @@
+*, html, body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    "Helvetica Neue", sans-serif;
+    max-width: 100%;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #161616;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+.navul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo-image {
+    margin-left: 100px;
+    width: 80px;
+    color: white;
+}
+
+.navli, .navli a {
+    text-decoration: none;
+    color: #E0E0E0;
+    font-weight: 600;
+    padding: 8px 0px;
+    transition: 300ms;
+    border-bottom: 1px solid #46b1f800;
+}
+
+.navli a:hover {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #46b1f8;
+}
+
+.menu-icon {
+    font-size: 24px;
+    display: none;
+}
+
+.btn {
+    background-color: white;
+    color: #46b1f8;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 300ms;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #46b1f8;
+    color: white;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn-reg {
+    background-color: #46b1f8;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 300ms;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-reg:hover {
+    background-color: #46b1f8;
+    color: white;
+    transform: scale(1.05);
+}
+
+.btn-reg:active {
+    transform: scale(0.95);
+}
+
+.btn-reg:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+    
+.navbar {
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.navul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.navli {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar, .nav-links, .navli:last-of-type {
+    padding-bottom: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+.menu-icon {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.logo {
+    margin-left: 1rem;
+}
+
+.logo-image {
+    margin-left: 0;
+}
+
+}

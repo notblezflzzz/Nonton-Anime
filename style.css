@@ -1,0 +1,507 @@
+
+*, html, body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    "Helvetica Neue", sans-serif;
+    max-width: 100%;
+}
+
+
+/* Header */
+.header-content {
+    height: 25px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #25D366;
+}
+
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #161616;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+.navul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo-image {
+    margin-left: 100px;
+    width: 80px;
+    color: white;
+}
+
+.navli, .navli a {
+    text-decoration: none;
+    color: #E0E0E0;
+    font-weight: 600;
+    padding: 8px 0px;
+    transition: 300ms;
+    border-bottom: 1px solid #46b1f800;
+}
+
+.navli a:hover {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #46b1f8;
+}
+
+.menu-icon {
+    font-size: 24px;
+    display: none;
+}
+
+.btn {
+    background-color: white;
+    color: #46b1f8;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 300ms;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #46b1f8;
+    color: white;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn-reg {
+    background-color: #46b1f8;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 300ms;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-reg:hover {
+    background-color: #46b1f8;
+    color: white;
+    transform: scale(1.05);
+}
+
+.btn-reg:active {
+    transform: scale(0.95);
+}
+
+.btn-reg:focus {
+    outline: none;
+}
+
+
+/* Header End */
+
+
+/* Home */
+.hero {
+    background-image: url('/gambar/solo-leveling.png'); /* Ganti dengan gambar yang sesuai */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Tambahkan gelap agar teks lebih terlihat */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    color: white;
+    padding: 2rem;
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.btn-get {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.btn-get:hover {
+    background-color: #0056b3;
+    color: white;
+    transform: scale(1.05);
+    transition: background-color 300ms, color 300ms;
+    transition: transform 300ms;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-img {
+    margin-top: 90px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.home-text {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 600;
+    text-shadow: 0px 0px 5px #000000;
+}
+
+.btn-start {
+    margin-top: 20px;
+    background-color: white;
+    color: #46b1f8;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 300ms;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-start:hover {
+    background-color: #46b1f8;
+    color: white;
+    transform: scale(1.05);
+}
+/* Home End */
+
+/* Popular Anime */
+.popular-anime {
+    min-height: 100vh;
+    background-color: #161616;
+    position: relative;
+}
+
+.heading {
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+
+.anime-card {
+    padding: 2rem;
+    background-color: #121212;
+    color: #fff;
+}
+
+.card-track {
+    display: flex;
+    gap: 2rem;
+}
+
+.card-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.card-item {
+    background-color: #1e1e1e;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.card-item:hover {
+    transform: translateY(-10px);
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin: 0.8rem;
+}
+
+.card-description {
+    font-size: 0.9rem;
+    margin: 0 0.8rem 1rem 0.8rem;
+    color: #cfcfcf;
+}
+
+.anime-card-slider {
+    position: relative;
+    padding: 2rem;
+    background-color: #121212;
+}
+
+.card-track {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 1rem;
+    scroll-snap-type: x mandatory;
+}
+
+.card-item {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    max-width: 250px;
+}
+
+.slide-btn {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.6);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+}
+
+.prev-btn { 
+    left: 10px; 
+}
+.next-btn { 
+    right: 10px; 
+}
+
+
+.card-btn {
+    background-color: #46b1f8;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 300ms;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: block;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card-btn:hover {
+    background-color: #46b1f8;
+    color: white;
+    transform: scale(1.05);
+}
+
+.slide-btn {
+    display: block;
+    background-color: #121212;
+}
+
+.card-track::-webkit-scrollbar {
+    height: 8px;
+}
+
+.card-track::-webkit-scrollbar-track {
+    background: #1e1e1e;
+    border-radius: 10px;
+}
+
+.card-track::-webkit-scrollbar-thumb {
+    background-color: #46b1f8;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.card-track::-webkit-scrollbar-thumb:hover {
+    background-color: #46b1f8;
+}
+
+.popular-anime .slide-btn {
+    display: block;
+    background-color: #121212;
+    z-index: 1;
+}
+
+
+
+.other-anime {
+    background-color: #121212;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 3rem;
+}
+
+.other-anime-title, .heading {
+    background-color: #161616;
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+.footer-item {
+    background-color: #161616;
+    color: white;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    .header-content {
+        height: 25px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #25D366;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+
+    .navul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    .navli {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar, .nav-links, .navli:last-of-type {
+        padding-bottom: 8px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .menu-icon {
+    color: white;
+    display: flex;
+    align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .hero-content {
+        padding: 1rem;
+    }
+
+    .btn {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .logo {
+        margin-left: 1rem;
+    }
+
+    .logo-image {
+        margin-left: 0;
+    }
+
+    .home-img {
+        width: 100vh;
+        height: 100vh;
+    }
+
+    .slide-btn {
+        display: block;
+        background-color: #121212;
+    }
+}
